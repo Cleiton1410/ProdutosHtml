@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes Produto</title>
+</head>
+
+<body>
+    <header>
+        <center><h1>Smart Watch t800 Ultra</h1></center>
+    </header>
+    <main>
+        <section>
+            <article>
+            <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="4">Detalhes do Produto</th>
+                    </th>
+                </tr>
+                <tr>
+                    <tbody>
+                        <td>Preço</td>
+                        <td>Disponibilidade</td>
+                        <td>Cores</td>
+                        <td>Tamanho</td>
+                    </tbody>
+                </tr>
+                <tr>
+                    <td>109.99</td>
+                    <td>Indisponivel</td>
+                    <td>Azul</td>
+                    <td>42/44/45/49</td>
+                </tr>
+                <tr>
+                    <td>129.99</td>
+                    <td>Disponivel</td>
+                    <td>Laranja</td>
+                    <td>42/44/45/49</td>
+                </tr>
+                <tr>
+                    <td>150.99</td>
+                    <td>Disponivel</td>
+                    <td>Rosa</td>
+                    <td>42/44/45/49</td>
+                </tr>
+                <tr>
+                    <td>109.99</td>
+                    <td>Indisponivel</td>
+                    <td>Preto</td>
+                    <td>42/44/45/49</td>
+                </tr>
+            </thead>
+            </table>
+        </article>
+        </section>
+        <section>
+            <h2>Opções de  Compras</h2>
+            <form action="Detalhes da Compra" method="post">
+                <label for="Quantidade">Quantidade:</label><br>
+                <input type="number" id="Quantidade" name="Quantidade" min="1" max="1000"><br><br>
+
+                <label for="Cor">Cor:</label><br>
+
+                <input type="radio" id="cor-azul" name="cor" value="azul">
+                <label for="cor-azul">Azul</label><br>
+
+                <input type="radio"id="cor-laranja"name="cor" value="laranja">
+                <label for="cor-laranja">Laranja</label><br>
+
+                <input type="radio" id="cor-rosa" name="cor" value="rosa">
+                <label for="cor-rosa">Rosa</label><br>
+
+                <input type="radio" id="cor-preto" name="cor" value="preto">
+                <label for="cor-preto">Preto</label><br><br>
+
+                <label for="Tamanho">Tamanho:</label><br>
+
+                <input type="checkbox" id="tam-pequeno" name="tamanho"value="pequeno">
+                <label for="tam-pequeno">Pequeno:</label><br>
+
+                <input type="checkbox" id="tam-medio" name="tamanho"value="medio">
+                <label for="tam-medio">Medio:</label><br>
+
+                <input type="checkbox" id="tam-grande" name="tamanho"value="Grande">
+                <label for="tam-grande">Grande:</label><br><br>
+
+                <h2>Informações de Envio</h2>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                        
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" name="endereco"><br>
+                        
+                <label for="cidade">Cidade:</label><br>
+                <input type="text" id="cidade" name="cidade"><br>
+                        
+                <label for="estado">Estado:</label><br>
+                <input type="text" id="estado" name="estado"><br>
+                        
+                <label for="cep">CEP:</label><br>
+                <input type="text" id="cep" name="cep"><br>
+
+                <label for="data-nascimento">Data Nascimento:</label><br>
+                <input type="date" id="data-nascimento" name="data-nascimento"><br><br>
+                <h2>Método de Pagamento</h2>
+                <input type="radio" id="tipo-cartao" name="metodo-pagamento" value="credito">
+                <label for="tipo-cartao">Cartão de Crédito</label><br>
+                <input type="radio" id="tipo-boleto" name="metodo-pagamento" value="boleto">
+                <label for="tipo-boleto">Boleto</label><br>
+                <input type="radio"id="tipo-Pix"name="metodo-pagamento" value="pix">
+                <label for="tipo-Pix">Pix</label><br><br>
+
+                <input type="submit" value="Adicionar ao Carrinho">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
